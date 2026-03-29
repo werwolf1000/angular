@@ -1,0 +1,34 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрирует по вертикали */
+  align-items: center; /* Центрирует по горизонтали */
+  min-height: 100vh;
+  gap: 40px;
+}
+
+.layout__image {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 10px;
+  & .layout__logo--image {
+    max-width: 100%;
+    width: 27px;
+    height: 29px;
+  }
+  & .logo-name {
+    font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.layout__page {
+  width: 100%;
+  max-width: 500px; /* Ограничиваем ширину формы */
+  margin: 0 auto; /* Центрируем форму по горизонтали */
+}
