@@ -1,0 +1,30 @@
+<!-- search.component.html -->
+<div class="search-container" [class.focused]="isFocused" [class.disabled]="disabled">
+  <div class="search-icon">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.5 17.5L13.875 13.875M15.8333 9.16667C15.8333 12.8486 12.8486 15.8333 9.16667 15.8333C5.48477 15.8333 2.5 12.8486 2.5 9.16667C2.5 5.48477 5.48477 2.5 9.16667 2.5C12.8486 2.5 15.8333 5.48477 15.8333 9.16667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <input
+    type="text"
+    class="search-input"
+    [placeholder]="placeholder"
+    [value]="value"
+    [disabled]="disabled"
+    (input)="onInput($event)"
+    (focus)="onFocus()"
+    (blur)="onBlur()"
+  />
+
+  <button
+    *ngIf="value && !disabled"
+    class="clear-button"
+    (click)="onClear()"
+    type="button"
+  >
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </button>
+</div>

@@ -1,0 +1,14 @@
+.genre{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.sidebar__title {
+  color: #ffffff;
+  font-family: 'Open Sans', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-size: 18px;
+}
+.sidebar__search{
+  margin-bottom: 38px;
+}

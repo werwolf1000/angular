@@ -1,0 +1,55 @@
+.layout__image {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 10px;
+  margin-bottom: 68px;
+  & .layout__logo--image {
+    max-width: 100%;
+    width: 27px;
+    height: 29px;
+  }
+  & .logo-name {
+    font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+.main__content{
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 95px;
+}
+
+.layout__head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout__menu{
+  display: flex;
+  gap: 60px;
+  color: #A0A0A0;
+  height: 24px;
+  & a {
+    color: #A0A0A0;
+  }
+  & .menu_item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    &.active {
+      color: #FFFFFF;
+      & a {
+        color: #FFFFFF;
+      }
+    }
+    & .menu__icon {
+      width: 24px;
+    }
+  }
+}

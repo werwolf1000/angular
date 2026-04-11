@@ -6,3 +6,18 @@ html, body {
   background-color: #09090F;
 }
 
+
+.main-container {
+  width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding: 59px 48px;
+}
+
+/* Box-sizing для корректных отступов */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

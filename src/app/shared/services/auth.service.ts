@@ -45,6 +45,10 @@ export class AuthService {
       );
   }
 
+  loginTest() {
+    this.isAuthenticated$.next(true);
+  }
+
   logout$(): Observable<boolean> {
     this._updateAuthData(null);
     return this.isAuthenticated$.asObservable().pipe(take(1));

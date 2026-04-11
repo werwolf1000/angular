@@ -1,0 +1,15 @@
+<!-- custom-radio.component.html -->
+<label class="custom-radio" [class.disabled]="disabled">
+  <input
+    type="radio"
+    [name]="name"
+    [id]="id"
+    [value]="value"
+    [checked]="isChecked()"
+    [disabled]="disabled"
+    (change)="onSelect()"
+  />
+  <span class="radio-custom"></span>
+  <span class="radio-label" *ngIf="label">{{ label }}</span>
+  <ng-content></ng-content>
+</label>

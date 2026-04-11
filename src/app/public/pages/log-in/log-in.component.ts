@@ -46,7 +46,9 @@ export class LogInComponent {
   error: string | null = null;
 
   onLoginClick(): void {
-    this._authService
+    this._authService.loginTest();
+    this._router.navigate(['private/home']);
+/*    this._authService
       .login$(this.form.controls.email.value, this.form.controls.password.value)
       .pipe(
         take(1),
@@ -56,6 +58,6 @@ export class LogInComponent {
           return of(err);
         })
       )
-      .subscribe();
+      .subscribe();*/
   }
 }
