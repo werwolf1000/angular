@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-import {LogInComponent} from '../page/log-in/log-in.component';
+import {LogInComponent} from '../pages/log-in/log-in.component';
+import {RouterOutlet} from '@angular/router';
+
 
 @Component({
   selector: 'app-layout',
   imports: [
-    LogInComponent
+    LogInComponent,
+    RouterOutlet
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
