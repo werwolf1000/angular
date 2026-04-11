@@ -5,15 +5,9 @@
   <div class="sidebar__block-menu">
     <div class="sidebar__search"></div>
     <h3 class="sidebar__title">Жанр</h3>
-    <div  class="genre">
-      @for(genre of genres; track genre) {
-        <app-custom-radio
-          [value]="genre.id"
-          [(ngModel)]="selectedOption"
 
-          [label]="genre.label"></app-custom-radio>
-      }
-    </div>
+      <app-menu></app-menu>
+
   </div>
 
 </div>

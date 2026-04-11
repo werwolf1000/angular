@@ -18,7 +18,7 @@ import {IMenu} from '../../../interfaces/imenu';
 })
 export class PrivateLayoutComponent {
   public menuItems: IMenu[] = [
-    {name: 'Главная', src: '/private/home' , icon: 'home.svg'},
-    {name: 'Избранное', src: '/private/favorites', icon: 'star.svg'},
+    {label: 'Главная', src: '/private/home' , icon: 'home.svg'},
+    {label: 'Избранное', src: '/private/favorites', icon: 'star.svg'},
   ]
 }

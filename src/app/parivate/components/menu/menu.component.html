@@ -1,0 +1,11 @@
+<div  class="genre">
+@for(genre of genres; track genre) {
+  <app-custom-radio
+    [value]="genre.id"
+    [(ngModel)]="selectedOption"
+
+    [label]="genre.label"></app-custom-radio>
+}
+</div>
+
+

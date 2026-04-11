@@ -15,7 +15,7 @@
         </div>
         <div class="layout__menu">
           @for(item of menuItems; track item) {
-            <div routerLinkActive="active" class="menu_item"><img [src]="'/images/' + item.icon" class="menu__icon"><a class="menu_link" [routerLink]="[item.src]">{{ item.name }}</a></div>
+            <div routerLinkActive="active" class="menu_item"><img [src]="'/images/' + item.icon" class="menu__icon"><a class="menu_link" [routerLink]="[item.src]">{{ item.label }}</a></div>
           }
         </div>
 
